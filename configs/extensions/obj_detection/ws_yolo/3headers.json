@@ -1,0 +1,53 @@
+{
+    "name": "3headers",
+    "train_settings": {
+        "raw_path": "/home/valde/GitHub/msc-thesis/data/raw/format_test_new_train",
+        "is_validation": false,
+        "max_img": 200000,
+        "elem_drops": [],
+        "elem_mergings": {
+            "masters": {
+                "1": "heading_123",
+                "4": "heading_456",
+                "5": "heading_789"
+            },
+            "mapping": {
+                "2": "1",
+                "3": "1",
+                "5": "4",
+                "6": "4",
+                "8": "7",
+                "9": "7"
+            }
+        },
+        "scanify": false,
+        "quality_threshold": -1,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    },
+    "val_settings": {
+        "raw_path": "/home/valde/GitHub/msc-thesis/data/raw/format_test_new_train",
+        "is_validation": true,
+        "max_img": 40000,
+        "elem_drops": [],
+        "elem_mergings": {
+            "masters": {
+                "1": "heading_123",
+                "4": "heading_456",
+                "5": "heading_789"
+            },
+            "mapping": {
+                "2": "1",
+                "3": "1",
+                "5": "4",
+                "6": "4",
+                "8": "7",
+                "9": "7"
+            }
+        },
+        "scanify": false,
+        "quality_threshold": -1,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    }
+}

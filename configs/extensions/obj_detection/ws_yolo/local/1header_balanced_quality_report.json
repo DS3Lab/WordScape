@@ -1,0 +1,40 @@
+{
+    "train_counts": {
+        "title": 14372,
+        "heading_global": 275224,
+        "text_merged": 698583,
+        "list_merged": 907053,
+        "header": 59964,
+        "footer": 66648,
+        "table_header": 363,
+        "table_header_cell": 1529,
+        "table": 7415,
+        "table_cell": 36691,
+        "equation": 1884,
+        "figure": 83010,
+        "table_caption": 1170,
+        "form_field": 55934,
+        "table_row": 16061,
+        "table_column": 12296,
+        "empty_labels": 7
+    },
+    "val_counts": {
+        "title": 2929,
+        "heading_global": 55435,
+        "text_merged": 145300,
+        "list_merged": 174718,
+        "header": 13161,
+        "footer": 13625,
+        "table_header": 139,
+        "table_header_cell": 600,
+        "table": 2554,
+        "table_cell": 13031,
+        "equation": 655,
+        "figure": 15416,
+        "table_caption": 338,
+        "form_field": 10153,
+        "table_row": 5521,
+        "table_column": 4433,
+        "empty_labels": 2
+    }
+}

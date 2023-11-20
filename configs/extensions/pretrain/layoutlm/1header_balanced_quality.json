@@ -1,0 +1,51 @@
+{
+    "name": "1header_balanced_quality_layoutlm",
+    "settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/train",
+        "is_validation": false,
+        "max_img": 200000,
+        "elem_drops": [24, 25, 27, 30],
+        "elem_mergings": {
+            "masters": {
+                "1": "heading_global",
+                "10": "text_merged",
+                "11": "list_merged"
+            },
+            "mapping": {
+                "2": "1",
+                "3": "1",
+                "4": "1",
+                "5": "1",
+                "6": "1",
+                "7": "1",
+                "8": "1",
+                "9": "1",
+                "18": "11",
+                "19": "11",
+                "20": "10"
+            }
+        },
+        "elem_mins": {
+            "0": 2300,
+            "1": 6000,
+            "10": 6000,
+            "11": 6000,
+            "12": 6000,
+            "13": 6000,
+            "14": 2300,
+            "15": 2300,
+            "16": 15000,
+            "17": 20000,
+            "21": 2300,
+            "22": 6000,
+            "23": 6000,
+            "26": 6000,
+            "28": 10000,
+            "29": 10000
+        },
+        "scanify": false,
+        "quality_threshold": 0.7,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    }
+}

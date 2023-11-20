@@ -1,0 +1,95 @@
+{
+    "name": "1header_balanced_quality_multilang",
+    "train_settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/train",
+        "is_validation": false,
+        "max_img": 200000,
+        "elem_drops": [14, 28, 29, 24, 25, 27, 30],
+        "elem_mergings": {
+            "masters": {
+                "1": "heading_title_global",
+                "10": "text_merged",
+                "11": "list_merged",
+                "17": "table_cell_merged"
+            },
+            "mapping": {
+                "0": "1",
+                "2": "1",
+                "3": "1",
+                "4": "1",
+                "5": "1",
+                "6": "1",
+                "7": "1",
+                "8": "1",
+                "9": "1",
+                "15": "17",
+                "18": "11",
+                "19": "11",
+                "20": "10",
+                "23": "10"
+            }
+        },
+        "elem_mins": {
+            "1": 20000,
+            "10": 20000,
+            "11": 20000,
+            "12": 20000,
+            "13": 20000,
+            "16": 20000,
+            "17": 20000,
+            "21": 20000,
+            "22": 20000,
+            "26": 20000
+        },
+        "scanify": false,
+        "quality_threshold": 0.7,
+        "language_codes": ["es", "fr", "it", "de", "pt", "en"],
+        "language_code_threshold": 0.75
+    },
+    "val_settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/val",
+        "is_validation": true,
+        "max_img": 40000,
+        "elem_drops": [14, 28, 29, 24, 25, 27, 30],
+        "elem_mergings": {
+            "masters": {
+                "1": "heading_title_global",
+                "10": "text_merged",
+                "11": "list_merged",
+                "17": "table_cell_merged"
+            },
+            "mapping": {
+                "0": "1",
+                "2": "1",
+                "3": "1",
+                "4": "1",
+                "5": "1",
+                "6": "1",
+                "7": "1",
+                "8": "1",
+                "9": "1",
+                "15": "17",
+                "18": "11",
+                "19": "11",
+                "20": "10",
+                "23": "10"
+            }
+        },
+        "elem_mins": {
+            "1": 4000,
+            "10": 4000,
+            "11": 4000,
+            "12": 4000,
+            "13": 4000,
+            "16": 4000,
+            "17": 4000,
+            "21": 4000,
+            "22": 4000,
+            "26": 4000
+        },
+        "scanify": false,
+        "quality_threshold": 0.7,
+        "language_codes": ["es", "fr", "it", "de", "pt", "en"],
+        "language_code_threshold": 0.75
+    }
+}

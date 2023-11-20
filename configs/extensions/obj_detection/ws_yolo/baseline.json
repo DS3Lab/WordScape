@@ -1,0 +1,25 @@
+{
+    "name": "baseline",
+    "train_settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/train",
+        "is_validation": false,
+        "max_img": 200000,
+        "elem_drops": [],
+        "elem_mergings": {},
+        "scanify": false,
+        "quality_threshold": -1,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    },
+    "val_settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/val",
+        "is_validation": true,
+        "max_img": 40000,
+        "elem_drops": [],
+        "elem_mergings": {},
+        "scanify": false,
+        "quality_threshold": -1,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    }
+}

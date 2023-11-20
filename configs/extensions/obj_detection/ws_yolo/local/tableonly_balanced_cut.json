@@ -1,0 +1,51 @@
+{
+    "name": "tableonly_balanced_cut",
+    "train_settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/train",
+        "is_validation": false,
+        "max_img": 200000,
+        "elem_drops": [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 18, 19, 20, 21,
+            22, 23, 24, 25, 26, 27, 28, 29, 30
+        ],
+        "elem_mins": {
+            "16": 190000
+        },
+        "elem_mergings": {
+            "masters": {
+                "17": "table_cell_merged"
+            },
+            "mapping": {
+                "15": "17"
+            }
+        },
+        "scanify": false,
+        "quality_threshold": -1,
+        "language_codes": ["en", "de"],
+        "language_code_threshold": 0.75
+    },
+    "val_settings": {
+        "raw_path": "/mnt/DATA/msc-data/cc_main_2023_14/val",
+        "is_validation": true,
+        "max_img": 40000,
+        "elem_drops": [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 18, 19, 20, 21,
+            22, 23, 24, 25, 26, 27, 28, 29, 30
+        ],
+        "elem_mins": {
+            "16": 38000
+        },
+        "elem_mergings": {
+            "masters": {
+                "17": "table_cell_merged"
+            },
+            "mapping": {
+                "15": "17"
+            }
+        },
+        "scanify": false,
+        "quality_threshold": -1,
+        "language_codes": ["en", "de"],
+        "language_code_threshold": 0.75
+    }
+}

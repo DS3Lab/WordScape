@@ -1,0 +1,21 @@
+.idea/*
+.vscode/*
+*.pyc
+*.DS_Store
+Pipfile
+Pipfile.lock
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# data folders
+data/*
+!data/.gitkeep
+!data/tmp/.gitkeep
+annotated/*
+resources/*/*.bin
+resources/*/*.model
+resources/*/*.ftz
+
+# venv
+.venv

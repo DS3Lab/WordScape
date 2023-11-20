@@ -1,0 +1,31 @@
+{
+    "name": "tableonly_quality",
+    "train_settings": {
+        "raw_path": "/mnt/scratch/thannerv/msc-data/wordscape-2023-14/train",
+        "is_validation": false,
+        "max_img": 200000,
+        "elem_drops": [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 18, 19, 20, 21, 22,
+            23, 24, 25, 26, 27, 28, 29, 30
+        ],
+        "elem_mergings": {},
+        "scanify": false,
+        "quality_threshold": 0.75,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    },
+    "val_settings": {
+        "raw_path": "/mnt/scratch/thannerv/msc-data/wordscape-2023-14/val",
+        "is_validation": true,
+        "max_img": 40000,
+        "elem_drops": [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 18, 19, 20, 21, 22,
+            23, 24, 25, 26, 27, 28, 29, 30
+        ],
+        "elem_mergings": {},
+        "scanify": false,
+        "quality_threshold": 0.75,
+        "language_codes": ["en"],
+        "language_code_threshold": 0.75
+    }
+}
