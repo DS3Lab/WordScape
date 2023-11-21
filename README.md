@@ -30,6 +30,9 @@ multimodal dataset with page images, text, and bounding box annotations for sema
 Here we briefly describe the three steps of the pipeline and refer to the instructions for each individual step for more
 details.
 
+If you wish to directly run the pipeline on the preprocessed urls, you can do so using Docker. For instructions, see
+the section [Running WordScape using Docker](#running-wordscape-using-docker).
+
 ## Common Crawl Parsing
 
 The initial step in the WordScape pipeline involves extracting URLs pointing to Word files from Common Crawl snapshots,
