@@ -69,6 +69,36 @@ and quality score. In addition, we also provide scripts to train a YOLOv5l model
 You find more details related to the pipeline extensions and model training in
 the [Extensions README](README_EXTENSIONS.md).
 
+# Running WordScape using Docker
+
+The most straightforward way to run the pipeline is to run it in Docker. We provide a Dockerfile in `app/` that contains
+all the dependencies required to run the pipeline. The Docker image can then be used to directly run the WordScape
+pipeline on the urls provided. To build the image, run the following command from the root folder of this repository:
+
+```shell
+cd app
+docker build -t wordscape .
+```
+
+Then, create or symlink a directory where the data will be stored. This directory will be mounted in the Docker
+container.
+
+```shell
+DATA_ROOT=/path/to/your/data/folder
+mkdir -p DATA_ROOT
+```
+
+Then, to run the pipeline, you can use the following command. This will download the url lists, download the associated
+documents and then annotate them and create the dataset.
+
+```shell
+MAX_DOCS=32
+docker run -v "$DATA_ROOT:/mnt/data" wordscape --dump_id "CC-MAIN-2023-06" --max_docs "$MAX_DOCS"
+
+```
+
+Omitting the `--max_docs` flag or setting it to `-1` will run the pipeline on all urls in the list.
+
 # Setup
 
 This pipeline has been successfully tested on both MacOS and Linux Ubuntu and CentOS. We recommned working with a
