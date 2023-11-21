@@ -19,9 +19,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 RUN pip3 install --no-cache-dir gdown
 
 # install libreoffice
-#RUN wget https://download.documentfoundation.org/libreoffice/stable/7.5.8/deb/x86_64/LibreOffice_7.5.8_Linux_x86-64_deb.tar.gz
-#RUN wget https://downloadarchive.documentfoundation.org/libreoffice/old/7.4.6.2/deb/x86_64/LibreOffice_7.4.6.2_Linux_x86-64_deb.tar.gz
-COPY LibreOffice_7.4.6.2_Linux_x86-64_deb.tar.gz LibreOffice_7.4.6.2_Linux_x86-64_deb.tar.gz
+RUN wget https://downloadarchive.documentfoundation.org/libreoffice/old/7.4.6.2/deb/x86_64/LibreOffice_7.4.6.2_Linux_x86-64_deb.tar.gz
 RUN tar -xzvf LibreOffice_7.4.6.2_Linux_x86-64_deb.tar.gz && cd LibreOffice_7.4.6.2_Linux_x86-64_deb/DEBS && dpkg -i *.deb
 RUN rm -rf LibreOffice_7.4.6.2_Linux_x86-64_deb.tar.gz LibreOffice_7.4.6.2_Linux_x86-64_deb
 
