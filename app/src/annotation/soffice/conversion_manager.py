@@ -85,8 +85,8 @@ class ConversionManager:
 
         cmd = " ".join([
             "unoserver",
-            f"--port {self._soffice_listen_port}",
             f"--interface {self.ip_address}",
+            f"--port {self._soffice_listen_port}",
             f"--executable {self.soffice_executable}",
             "--daemon"
         ])
@@ -132,6 +132,7 @@ class ConversionManager:
         self.shutdown_soffice()
 
         # soffice process has died, restart it
+        self._xml_rpc_port = get_free_port()
         self._soffice_listen_port = get_free_port()
         self._soffice_proc = self._start_unoserver()
         self._soffice_pid = self._soffice_proc.pid

@@ -3,7 +3,7 @@
 This repository contains a pipeline to extract Word documents from the web, render page images, extract the text and
 generate bounding box annotations for semantic entities.
 
-![WordScape Pipeline](resources/wordscape.png)
+![WordScape Pipeline](docs/wordscape.png)
 
 # Document urls
 

@@ -1,7 +1,6 @@
 import argparse
 from datetime import datetime as dt
 import dill
-import git
 import joblib
 import json
 import logging
@@ -193,15 +192,6 @@ def build_dir_structure(out_dir: pathlib.Path):
     return out_dir, multimodal_dir, meta_dir, text_dir, failed_dir, logs_dir
 
 
-def get_version_info():
-    repo = git.Repo(search_parent_directories=False)
-    return {
-        "git_sha": repo.head.object.hexsha,
-        "git_branch": repo.active_branch.name,
-        "timestamp": get_timestamp()
-    }
-
-
 def main():
     start_time = dt.now()
 
@@ -226,11 +216,6 @@ def main():
     ) = build_dir_structure(
         out_dir=pathlib.Path(args.output_dir)
     )
-
-    # get info about versioning
-    version_info = get_version_info()
-    with open(res_dir / "version_info.json", "w") as f:
-        json.dump(version_info, f, indent=4)
 
     # save config to tgt_root
     shutil.copy(args.config, res_dir / "config.yaml")
@@ -264,7 +249,6 @@ def main():
     logger.info(f"meta_dir: {meta_dir}")
     logger.info(f"text_dir: {text_dir}")
     logger.info(f"failed_dir: {failed_dir}")
-    logger.info(f"version_info: {version_info}")
     logger.info(f"num_annotators: {num_worker_processes}")
 
     # setup manager and queues
