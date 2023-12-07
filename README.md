@@ -1,7 +1,10 @@
 # WordScape: a Pipeline to extract multilingual, visually rich Documents with Layout Annotations from Web Crawl Data
 
-This repository contains a pipeline to extract Word documents from the web, render page images, extract the text and
-generate bounding box annotations for semantic entities.
+This repository contains code for WordScape pipeline.
+The pipeline extracts Word documents from the web, renders document pages as images, extracts the text and
+generates bounding box annotations for semantic entities.
+
+The WordScape paper is available [here](https://openreview.net/pdf?id=xewwYquInO).
 
 ![WordScape Pipeline](docs/wordscape.png)
 
